@@ -1,0 +1,488 @@
+// ================
+// Layout
+// ================
+
+
+// ================
+// Universal Elements
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+// ================
+// Layout Modules
+
+%center,
+.center {
+	width: 90%;
+	max-width: $mq-medium;
+	margin: auto;
+}
+
+
+// ================
+// Major Layout Elements
+
+// ~ Put styles for school logo, common headers, footers, etc. here ~
+
+
+.guide-headline {
+	text-align: center;
+	position: absolute;
+	z-index: 10000;
+  padding: 5% 7%;
+	left: 0;
+	right: 0;
+
+	h1 {
+    background: white;
+    margin-left: -16%;
+    border-radius: 4rem;
+    padding: .5rem;
+    font-size: 1.25rem;
+    position: relative;
+
+    &:after {
+    	@media (min-width: $mq-large) { 
+		    position: absolute;
+		    content: "Here's what you've chosen so far:";
+		    /* top: 0; */
+		    left: 0;
+		    bottom: -34px;
+		    color: white;
+		    font-size: 1.125rem;
+		    text-transform: capitalize;
+		    right: 0;
+		    width: 100%;
+		    height: 2rem;
+		    font-family: century-gothic, sans-serif;
+	  	}
+    }
+
+    	@media (min-width: $mq-medium) { 
+    		@include fluidTypeSize(1.5, 1.4);
+    	}
+	}
+}
+
+header {
+	padding: 2% 0;
+	display: flex;
+	flex-direction: column;
+	@media (min-width: $mq-mediumSmall) { 
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	h1 {
+		@include logo($school-logo);
+		height: 4rem;
+		max-width: 4em;
+		margin: 0;
+	}
+}
+
+.mobile-header {
+	padding: 5%;
+}
+
+nav {
+	position: relative;
+	z-index: 100000;
+	margin-bottom: 3rem;
+
+	h1 {
+		visibility: hidden;
+		margin: 0;
+		padding: 0;
+		height: 0;
+		width: 0;
+	}
+	ul {
+		display:  flex;
+		justify-content: center;
+		flex-direction: column;
+		@media (min-width: $mq-small) { 
+			flex-direction: row;
+		}
+
+		@media (min-width: $mq-mediumSmall) { 
+			justify-content: center;
+		}
+	}
+} 
+
+
+form {
+	font-weight: bold;
+}
+
+.page-wraper {
+	display: flex;
+	flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+	#left-container { 
+		flex-grow: 1;
+	}
+	@media (min-width: $mq-mediumSmall) {
+		flex-direction: row;
+		#left-container {
+			flex: 1 calc(100% - 32%);
+		}
+		#right-container {
+			flex: 1 32%;
+			.img-wrapper {
+				height: 100%;
+			}
+		}
+	}
+
+	#left-container {
+		padding: 0 5%;
+
+		.container-inner-wrap {
+			max-width: 80%;
+			margin: auto;
+			position: relative;
+		}
+	}
+
+	#right-container {
+		position: relative;
+			@media (max-width: $mq-mediumSmall) { 
+				display: none;
+			}
+			@media (min-width: $mq-mediumSmall) { 
+				// counter styles 
+				#academicsCounter, #StudentLifeCounter, #finAssistanceCounter, #ResourcesCounter, #StudentSuccessCounter { 
+					display: none;
+				}
+			}
+	}
+
+	#page-template {
+		position: relative;
+		padding-bottom: 12%;
+		z-index: 500;
+		margin-bottom: 0;
+		border-bottom: 1px dotted #212121;
+
+		#checkbox-container {
+			@include fluidTypeSize(1.125, 1);
+		}
+	}	
+}
+
+// Checkbox Styles 
+#HomeCheckbox-container, #checkbox-container {
+	padding: 3%;
+	h4 {
+		margin-bottom: 1.5rem;
+		@include fluidTypeSize(1.5, 1.3);
+	}
+	div {
+		display: flex;
+		align-items: baseline;
+		padding: 0 0 1rem;
+
+		input {
+			margin-bottom: 0;
+		}
+
+		label {
+			padding: 0;
+		}
+	}
+}
+
+
+//Page(s) Categories
+
+// targeting page body tags --
+// General Page Styels 
+
+
+//welcome page
+#welcome-page {
+	// Nav Section
+	nav {
+		display: none;
+	}
+	#guideContact-container, .step-container, .checklist-thanks-copy, #page-template {
+		display: none;
+	}
+
+
+.guide-headline h1 {
+	&:after {
+		display: none;
+	}
+}
+
+	#left-container {
+		margin-bottom: 3%;
+	}
+}
+
+//Academics Page
+#academics-page {
+	// hide Create Checklist Button 
+	#guideContact-container, #createChecklistButton, #checklist-thanks-copy {
+		display: none;
+	}
+}
+
+//Students Life Page
+#student-life-page { 
+	#guideContact-container, #createChecklistButton, #checklist-thanks-copy {
+		display: none;
+	}
+}
+
+//Fin. Assistance Page
+#fin-assistance-page {
+	#checkbox-container {
+		#finAssistanceQue5, #finAssistanceQue4 {
+			display: none;
+		}
+	}
+	#guideContact-container, #createChecklistButton, #checklist-thanks-copy {
+		display: none;
+	}
+}
+
+//Resources Page
+#resources-page {
+	#checkbox-container {
+		#resourceseQue4, #resourcesQue5 {
+			display: none;
+		}
+	}
+	#guideContact-container, #createChecklistButton, #checklist-thanks-copy {
+		display: none;
+	}
+}
+
+//Student Success Page
+#student-success-page {
+	#checkbox-container {
+		#studentSuccessQue5 {
+			display: none;
+		}
+	}
+	// hide Create Checklist Button 
+	#guideContact-container, #createChecklistButton {
+		display: none;
+	}
+}
+
+
+
+
+//Checklist Page
+#checklist-page {
+	ul {
+		#academicsCounter, #finAssistanceCounter, #ResourcesCounter, #StudentSuccessCounter, #StudentLifeCounter {
+			display: none !important;
+		}
+	}
+	// hide Create Checklist Button 
+	#createChecklistButton {
+		display: block;
+	}
+	.step-container {
+		display: none;
+	}
+	nav {
+		margin-top: auto;
+	}
+	.page-wraper {
+		height: 100%;
+		flex-direction: column-reverse;
+
+		@media (min-width: $mq-mediumSmall) { 
+			flex-direction: row;
+		}
+
+		#page-template {
+		.checkListContainer {
+			.checklist-thanks-copy {
+				margin-top: -1rem;
+			}
+		}
+		}
+
+		.img-wrapper {
+			padding: 15%;
+		}
+	}
+	#guideContact-container {
+		display: none;
+	}
+	.guide-headline {
+		display: none;
+	}
+}
+
+//Guide Page
+#guide-page {
+	header {
+		text-align: center;
+		justify-content: center;
+	}
+	.step-container, .intro-categories {
+		display: none;
+	}
+	#page-template {
+		border-bottom: 0;
+		padding-bottom: 0;
+	}
+	.headerCollage {
+		display: none;
+    height: 35vh;
+    width: 100%;
+    background: url(sieana-header-image.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: 50% 0;
+	}
+	.guideContainer {
+		margin: 5% auto;
+		
+		@media (min-width: $mq-mediumSmall) {  
+			max-width: 65rem !important;
+		}
+
+		section {
+			position: relative;
+			padding: 7rem 1vw 5vh;
+			border-bottom: 1px dashed;
+			margin-bottom: 2rem;
+
+			h2 {
+				text-transform: inherit;
+				border-bottom: 2px #fcc917 solid;
+			}
+			div {
+				margin: 3rem 0;
+			}
+
+				&:before {
+			    content: " ";
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 6rem;
+				}
+
+				@media (min-width: $mq-mediumSmall) { 
+					padding: 2vh 1vw 5vh;
+					padding-left: 23rem;
+
+					&:before { 
+				    width: 19rem;
+				    height: 94%;
+					}
+
+					&:nth-of-type(2n+0) {
+						padding-right: 23rem;
+						padding-left: 0;
+						&:before { 
+							left: inherit;
+							right: 0;
+						}
+					}
+				}
+
+			p {
+				// padding-bottom: 2vh;
+			}
+			div {
+				padding-left: 5%;
+			}
+		}
+		span {
+			margin: 10% 0 2%;
+			display: block;
+			text-align: center;
+			@media (min-width: $mq-small) { 
+				max-width: 32rem;
+				margin: auto; 
+		    display: flex;
+		    justify-content: space-around;
+		    flex-wrap: wrap;
+			}
+		}
+	}
+	// hide Previous Button 
+	nav {
+		display: none;
+	}
+}
+
+
+footer {
+	#guideContact-container {
+		padding: 3% 5%;
+		background: $c-sienagreen;
+    border-top: 5px solid #FCC917;
+    p {
+			color: white;
+			font-weight: bold;
+			@include fluidTypeSize(1.125, 1);
+			max-width: 60rem;
+			margin: 1rem auto;
+    }
+		.contact-wrapper {
+			text-align: center;
+			@media (min-width: $mq-mediumSmall) { 
+				padding-left: 45%;
+				text-align: left;
+			}
+			p {
+				position: relative;
+				color: white;
+				font-weight: bold;
+				@include fluidTypeSize(1.125, 1);
+				padding: 0;
+				margin: 0;
+				@media (min-width: $mq-mediumSmall) { 
+					&:before {
+						content: " ";
+						position: absolute;
+						left: -18rem;
+						top: 0;
+						width: 14rem;
+						height: 5rem;
+						background: url("img_siena_logo-reversed.svg") no-repeat center center;
+						background-size: contain;
+					}
+					}
+			}
+			a {
+				color: $c-sienagold;
+			}
+		}
+		ul {
+			display: flex;
+	    flex-direction: column;
+	    align-items: center;
+			padding: 5%;
+
+			a{
+				@include button($c-white, $c-sienagreen, $c-sienagreen);
+			}
+				@media (min-width: $mq-small) { 
+					flex-direction: row;
+					padding: 3% 5% 0;
+					justify-content: space-around;
+				}
+		}
+	}
+}
+

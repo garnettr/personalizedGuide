@@ -1,0 +1,137 @@
+// ================
+// Buttons
+// ================
+
+
+// ================
+// Extendable Placeholders
+
+// Base Button Styles
+%button {
+  display: block;
+  width: 100%;
+  padding: 0.75em 1.25em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  background: black;
+  font-size: 1rem;
+  line-height: 1.2;
+
+  &:hover,
+  &:focus {
+    // ~ Put hover/focus styles here ~
+  }
+
+  @media (min-width: $mq-small) {
+    display: inline-block;
+    width: auto;
+    max-width: 24rem;
+  }
+}
+
+
+// Major Buttons
+%major-button {
+  // ~ Put styles here ~
+}
+
+
+// Minor Buttons
+%minor-button {
+  // ~ Put styles here ~
+}
+
+
+// ================
+// Application of Placeholders
+
+// Default Button Selectors
+button,
+.type_event_button a,
+input[type=submit],
+input[type=button] {
+  @extend %button;
+}
+
+
+// Reusable Button Classes
+button,
+a,
+input {
+
+  &.button,
+  .button & {
+    @extend %button !optional;
+  }
+
+  &.major-button,
+  .major-button & {
+    @extend %major-button !optional;
+  }
+
+  &.minor-button,
+  .minor-button & {
+    @extend %minor-button !optional;
+  }
+}
+
+.reloadButton, .printButton  {
+  position: relative;
+  z-index: 10000;
+}
+
+#next-button, #createChecklistButton {
+  @include button($c-white, #014436, $c-sienagreen);
+  padding: 0.75em 1.25em;
+  &:after {
+    content: $i-caret-right;
+    color: $c-sienagold;
+  }
+  &:hover {
+    background-color: $c-sienagreenhover;
+    text-decoration: none;
+  }
+}
+
+#previous-button, .reloadButton  {
+  @include button($c-white, $c-sienagreen, $c-sienagreen);
+  flex-direction: row-reverse;
+  padding: 0.75em 1.25em;
+  margin-right: .5rem;
+  font-size: 1rem;
+
+  &:after {
+    content: $i-caret-right;
+    transform: rotate(180deg);
+    margin-right: 1.5rem;
+    margin-left: 0;
+    color: $c-sienagold;
+  }
+
+  &:hover {
+    background-color: $c-sienagreenhover;
+    text-decoration: none;
+  }
+}
+
+#buildButton, #welcomePage-button, .printButton  {
+  @include button($c-darkgrey, $c-sienagold, $c-sienagreen);
+  padding: 0.75em 1.25em;
+  width: 100%;
+  border: 0;
+
+  &:after {
+    content: $i-caret-right;
+    color: $c-darkgrey;
+  }
+
+  &:hover {
+    background-color: $c-sienagreenhover;
+    text-decoration: none;
+  }
+}

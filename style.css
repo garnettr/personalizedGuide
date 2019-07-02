@@ -1,0 +1,2653 @@
+@charset "UTF-8";
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+/* line 13, sass/foundation/vendor/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 27, sass/foundation/vendor/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 35, sass/foundation/vendor/_normalize.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 49, sass/foundation/vendor/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 62, sass/foundation/vendor/_normalize.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 72, sass/foundation/vendor/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 81, sass/foundation/vendor/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 92, sass/foundation/vendor/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 105, sass/foundation/vendor/_normalize.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 115, sass/foundation/vendor/_normalize.scss */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 125, sass/foundation/vendor/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 135, sass/foundation/vendor/_normalize.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 144, sass/foundation/vendor/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 154, sass/foundation/vendor/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 165, sass/foundation/vendor/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 173, sass/foundation/vendor/_normalize.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 182, sass/foundation/vendor/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 191, sass/foundation/vendor/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 199, sass/foundation/vendor/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 203, sass/foundation/vendor/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 214, sass/foundation/vendor/_normalize.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 223, sass/foundation/vendor/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 232, sass/foundation/vendor/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 240, sass/foundation/vendor/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 252, sass/foundation/vendor/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 268, sass/foundation/vendor/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 278, sass/foundation/vendor/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 289, sass/foundation/vendor/_normalize.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 300, sass/foundation/vendor/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 312, sass/foundation/vendor/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/* line 323, sass/foundation/vendor/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 336, sass/foundation/vendor/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 350, sass/foundation/vendor/_normalize.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 359, sass/foundation/vendor/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 368, sass/foundation/vendor/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 378, sass/foundation/vendor/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 388, sass/foundation/vendor/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+/* line 397, sass/foundation/vendor/_normalize.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 407, sass/foundation/vendor/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 420, sass/foundation/vendor/_normalize.scss */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 429, sass/foundation/vendor/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 440, sass/foundation/vendor/_normalize.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 448, sass/foundation/vendor/_normalize.scss */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 459, sass/foundation/vendor/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* =============================================
+   Base styles: opinionated defaults
+   ============================================= */
+/* line 13, sass/foundation/vendor/_html5-boilerplate-base.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 21, sass/foundation/vendor/_html5-boilerplate-base.scss */
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 32, sass/foundation/vendor/_html5-boilerplate-base.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 37, sass/foundation/vendor/_html5-boilerplate-base.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 46, sass/foundation/vendor/_html5-boilerplate-base.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+/* line 60, sass/foundation/vendor/_html5-boilerplate-base.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 71, sass/foundation/vendor/_html5-boilerplate-base.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 81, sass/foundation/vendor/_html5-boilerplate-base.scss */
+textarea {
+  resize: vertical;
+}
+
+/* =============================================
+   Browse Happy prompt
+   ============================================= */
+/* line 89, sass/foundation/vendor/_html5-boilerplate-base.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* =============================================
+   Helper classes
+   ============================================= */
+/*
+ * Image replacement
+ */
+/* line 104, sass/foundation/vendor/_html5-boilerplate-base.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 112, sass/foundation/vendor/_html5-boilerplate-base.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 123, sass/foundation/vendor/_html5-boilerplate-base.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 132, sass/foundation/vendor/_html5-boilerplate-base.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 148, sass/foundation/vendor/_html5-boilerplate-base.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 162, sass/foundation/vendor/_html5-boilerplate-base.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 178, sass/foundation/vendor/_html5-boilerplate-base.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 184, sass/foundation/vendor/_html5-boilerplate-base.scss */
+.clearfix:after {
+  clear: both;
+}
+
+@-ms-viewport {
+  width: device-width;
+  zoom: 1;
+}
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+@font-face {
+  font-family: 'Oswald-Regular';
+  src: url("font-Oswald-Regular.eot");
+  src: url("font-Oswald-Regular.eot?#iefix") format("embedded-opentype"), url("font-Oswald-Regular.ttf") format("truetype"), url("font-Oswald-Regular.svg#oswald-regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Merriweather-Regular';
+  src: url("font-Merriweather-Regular.eot");
+  src: url("fonts/font-Merriweather-Regular.eot?#iefix") format("embedded-opentype"), url("font-Merriweather-Regular.ttf") format("truetype"), url("font-Merriweather-Regular.svg#merriweather-regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url("font-icomoon.eot?-i9n2wn");
+  src: url("font-icomoon.eot?#iefix-i9n2wn") format("embedded-opentype"), url("font-icomoon.woff?-i9n2wn") format("woff"), url("font-icomoon.ttf?-i9n2wn") format("truetype"), url("font-icomoon.svg?-i9n2wn#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 9, sass/foundation/global/_type.scss */
+*,
+*::before,
+*::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 20, sass/foundation/global/_type.scss */
+html {
+  line-height: 1.4;
+  font-family: century-gothic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* line 31, sass/foundation/global/_type.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald-Regular", arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: .5em 0;
+}
+
+/* line 37, sass/foundation/global/_type.scss */
+h1, h2, h3, h4 {
+  color: #1b4932;
+}
+
+/* line 40, sass/foundation/global/_type.scss */
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+/* line 44, sass/foundation/global/_type.scss */
+h5, h6 {
+  color: #000;
+}
+
+/* line 48, sass/foundation/global/_type.scss */
+h1 {
+  font-size: 2rem;
+}
+
+/* line 51, sass/foundation/global/_type.scss */
+h2 {
+  font-size: 1.8rem;
+}
+@media (min-width: 20rem) and (max-width: 75rem) {
+  /* line 51, sass/foundation/global/_type.scss */
+  h2 {
+    font-size: calc( 1.8rem + (2 - 1.8) * ( (100vw - 20rem) / ( 75 - 20) ));
+  }
+}
+@media (min-width: 75rem) {
+  /* line 51, sass/foundation/global/_type.scss */
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* line 54, sass/foundation/global/_type.scss */
+h3 {
+  font-size: 1.5rem;
+  padding-bottom: .5em;
+  border-bottom: 2px #fcc917 solid;
+}
+
+/* line 59, sass/foundation/global/_type.scss */
+h4 {
+  font-size: 1.3rem;
+}
+@media (min-width: 20rem) and (max-width: 75rem) {
+  /* line 59, sass/foundation/global/_type.scss */
+  h4 {
+    font-size: calc( 1.3rem + (1.5 - 1.3) * ( (100vw - 20rem) / ( 75 - 20) ));
+  }
+}
+@media (min-width: 75rem) {
+  /* line 59, sass/foundation/global/_type.scss */
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+/* line 62, sass/foundation/global/_type.scss */
+h5 {
+  font-size: 1rem;
+}
+
+/* line 65, sass/foundation/global/_type.scss */
+h6 {
+  font-size: .85em;
+}
+
+/* line 71, sass/foundation/global/_type.scss */
+p, ul, ol, blockquote, address {
+  line-height: 1.4;
+  margin: 1em 0;
+}
+
+/* line 77, sass/foundation/global/_type.scss */
+ul, ol {
+  list-style-type: none;
+  margin: 1em 0 0 0;
+  padding: 0;
+}
+/* line 82, sass/foundation/global/_type.scss */
+ul li, ol li {
+  display: block;
+  width: auto;
+}
+
+/* line 88, sass/foundation/global/_type.scss */
+a {
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  color: #006b54;
+  text-decoration: underline;
+}
+/* line 93, sass/foundation/global/_type.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 97, sass/foundation/global/_type.scss */
+.error {
+  color: #b01c2e;
+  animation: error .7s linear;
+  -webkit-animation: error .7s linear;
+}
+
+/* line 103, sass/foundation/global/_type.scss */
+#copyright, .copyright {
+  color: #666;
+  font-size: .9rem;
+  font-style: italic;
+  margin-top: 1em;
+}
+
+/* line 113, sass/foundation/global/_type.scss */
+.question .help,
+small {
+  font-size: 0.875em;
+  font-style: italic;
+}
+
+/* line 123, sass/foundation/global/_type.scss */
+.error,
+.val-header {
+  color: red;
+}
+
+/* line 10, sass/foundation/global/_forms.scss */
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=text], textarea, select {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid black;
+  background: #fff;
+}
+/* line 16, sass/foundation/global/_forms.scss */
+.type_telephone input[type=email],
+.type_telephone input[type=password],
+.type_telephone input[type=tel],
+.type_telephone input[type=text], .type_telephone textarea, .type_telephone select, .type_ssn input[type=email],
+.type_ssn input[type=password],
+.type_ssn input[type=tel],
+.type_ssn input[type=text], .type_ssn textarea, .type_ssn select, .type_date input[type=email],
+.type_date input[type=password],
+.type_date input[type=tel],
+.type_date input[type=text], .type_date textarea, .type_date select {
+  width: auto;
+}
+/* line 22, sass/foundation/global/_forms.scss */
+.error input[type=email],
+.error input[type=password],
+.error input[type=tel],
+.error input[type=text], .error textarea, .error select, .val-flag input[type=email],
+.val-flag input[type=password],
+.val-flag input[type=tel],
+.val-flag input[type=text], .val-flag textarea, .val-flag select {
+  border-color: red;
+}
+/* line 27, sass/foundation/global/_forms.scss */
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=tel]:focus,
+input[type=text]:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+/* line 34, sass/foundation/global/_forms.scss */
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=text] {
+  line-height: 1.2;
+}
+
+/* line 44, sass/foundation/global/_forms.scss */
+textarea {
+  overflow: auto !important;
+  min-height: 8em;
+  resize: both !important;
+  line-height: 1.4;
+}
+
+/* line 54, sass/foundation/global/_forms.scss */
+select {
+  overflow: hidden;
+  height: 2.5em;
+  line-height: 1.2;
+}
+
+/* line 63, sass/foundation/global/_forms.scss */
+input[type=radio],
+input[type=checkbox] {
+  margin: 0 .5rem .75rem;
+}
+/* line 70, sass/foundation/global/_forms.scss */
+input[type=radio] ~ label, input[type=radio] ~ .rte-q-label,
+input[type=checkbox] ~ label,
+input[type=checkbox] ~ .rte-q-label {
+  display: block;
+  padding: 0.3125em 0 0.3125em 1.25rem;
+  cursor: pointer;
+  font-size: 0.9444em;
+}
+
+/* line 84, sass/foundation/global/_forms.scss */
+.question {
+  margin: 1rem 0;
+}
+/* line 88, sass/foundation/global/_forms.scss */
+.question > label, .question > .rte-q-label, .question > .desc {
+  display: block;
+  padding: 0 0 0.125em 0;
+  line-height: 1.4;
+}
+/* line 95, sass/foundation/global/_forms.scss */
+.error .question > label, .val-flag .question > label, .error .question > .rte-q-label, .val-flag .question > .rte-q-label, .error .question > .desc, .val-flag .question > .desc {
+  color: red;
+}
+@media screen {
+  /* line 110, sass/foundation/global/_forms.scss */
+  .question .forprint {
+    display: none;
+  }
+}
+
+@media (min-width: 56.25em) {
+  /* line 196, sass/foundation/vendor/_royall.scss */
+  .wide-form .question:not(.type_checkbox):not(.type_ethnicity):not(.question-stacked) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    align-items: flex-start;
+  }
+  /* line 201, sass/foundation/vendor/_royall.scss */
+  .wide-form .question:not(.type_checkbox):not(.type_ethnicity):not(.question-stacked) > label,
+  .wide-form .question:not(.type_checkbox):not(.type_ethnicity):not(.question-stacked) > .rte-q-label {
+    padding: 0.5em 5% 0.5em 0;
+    width: 33.333%;
+  }
+  /* line 206, sass/foundation/vendor/_royall.scss */
+  .wide-form .question:not(.type_checkbox):not(.type_ethnicity):not(.question-stacked) > label ~ *,
+  .wide-form .question:not(.type_checkbox):not(.type_ethnicity):not(.question-stacked) > .rte-q-label ~ * {
+    width: calc(100% - 33.333%);
+  }
+  /* line 209, sass/foundation/vendor/_royall.scss */
+  .wide-form .question:not(.type_checkbox):not(.type_ethnicity):not(.question-stacked) > label ~ *.choice,
+  .wide-form .question:not(.type_checkbox):not(.type_ethnicity):not(.question-stacked) > .rte-q-label ~ *.choice {
+    margin: 0.375em 0;
+  }
+  /* line 214, sass/foundation/vendor/_royall.scss */
+  .wide-form .question:not(.type_checkbox):not(.type_ethnicity):not(.question-stacked) > label ~ .help,
+  .wide-form .question:not(.type_checkbox):not(.type_ethnicity):not(.question-stacked) > .rte-q-label ~ .help {
+    width: 100%;
+  }
+  /* line 220, sass/foundation/vendor/_royall.scss */
+  .wide-form .question.related-question {
+    padding-left: 33.333%;
+  }
+  /* line 123, sass/foundation/global/_forms.scss */
+  .wide-form .question {
+    margin: 0;
+    padding: 1rem 0;
+    border-top: 1px solid lightgray;
+  }
+  /* line 131, sass/foundation/global/_forms.scss */
+  .wide-form .rte-q:first-of-type .question {
+    padding-top: 0;
+    border-top: 0;
+  }
+}
+
+/* line 147, sass/foundation/global/_forms.scss */
+.type_multicheck .choice span,
+.type_radio .choice span,
+.type_ethnicity .choice span {
+  display: inline-block;
+  margin-right: 1em;
+  vertical-align: baseline;
+}
+/* line 158, sass/foundation/global/_forms.scss */
+.type_multicheck .choice input[type=radio] > label, .type_multicheck .choice input[type=radio] > .rte-q-label, .type_multicheck .choice input[type=checkbox] > label, .type_multicheck .choice input[type=checkbox] > .rte-q-label,
+.type_radio .choice input[type=radio] > label,
+.type_radio .choice input[type=radio] > .rte-q-label,
+.type_radio .choice input[type=checkbox] > label,
+.type_radio .choice input[type=checkbox] > .rte-q-label,
+.type_ethnicity .choice input[type=radio] > label,
+.type_ethnicity .choice input[type=radio] > .rte-q-label,
+.type_ethnicity .choice input[type=checkbox] > label,
+.type_ethnicity .choice input[type=checkbox] > .rte-q-label {
+  width: auto;
+}
+/* line 169, sass/foundation/global/_forms.scss */
+.type_multicheck.answer-stacked .choice span,
+.type_radio.answer-stacked .choice span,
+.type_ethnicity.answer-stacked .choice span {
+  display: block;
+}
+
+@media (min-width: 48em) {
+  /* line 188, sass/foundation/global/_forms.scss */
+  .desktop-hide {
+    display: none;
+  }
+}
+
+@media (min-width: 48em) {
+  /* line 194, sass/foundation/global/_forms.scss */
+  .desktop-hide {
+    display: none;
+  }
+}
+
+@media (max-width: 48em) {
+  /* line 200, sass/foundation/global/_forms.scss */
+  .mobile-hide {
+    display: none;
+  }
+}
+
+/* line 10, sass/foundation/global/_buttons.scss */
+button,
+.type_event_button a,
+input[type=submit],
+input[type=button], button.button, .button button,
+a.button, .button
+a,
+input.button, .button
+input {
+  display: block;
+  width: 100%;
+  padding: 0.75em 1.25em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  background: black;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+@media (min-width: 37.5em) {
+  /* line 10, sass/foundation/global/_buttons.scss */
+  button,
+  .type_event_button a,
+  input[type=submit],
+  input[type=button], button.button, .button button,
+  a.button, .button
+  a,
+  input.button, .button
+  input {
+    display: inline-block;
+    width: auto;
+    max-width: 24rem;
+  }
+}
+
+/* line 83, sass/foundation/global/_buttons.scss */
+.reloadButton, .printButton {
+  position: relative;
+  z-index: 10000;
+}
+
+/* line 88, sass/foundation/global/_buttons.scss */
+#next-button, #createChecklistButton {
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-family: "Oswald-Regular", arial, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: .75rem;
+  background-color: #014436;
+  border: 1px solid #006b54;
+  padding: 0.75em 1.25em;
+}
+@media (min-width: 37.5em) {
+  /* line 88, sass/foundation/global/_buttons.scss */
+  #next-button, #createChecklistButton {
+    width: auto;
+  }
+}
+/* line 97, sass/foundation/global/_mixins.scss */
+#next-button:after, #createChecklistButton:after {
+  font-family: "icomoon";
+  content: "";
+  color: #fcc917;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+/* line 105, sass/foundation/global/_mixins.scss */
+#next-button:focus, #createChecklistButton:focus {
+  outline: none;
+}
+/* line 109, sass/foundation/global/_mixins.scss */
+#next-button:hover, #createChecklistButton:hover {
+  background-color: #028f72;
+  text-decoration: none;
+}
+/* line 114, sass/foundation/global/_mixins.scss */
+#next-button:active, #createChecklistButton:active {
+  background-color: black;
+}
+/* line 91, sass/foundation/global/_buttons.scss */
+#next-button:after, #createChecklistButton:after {
+  content: "";
+  color: #fcc917;
+}
+/* line 95, sass/foundation/global/_buttons.scss */
+#next-button:hover, #createChecklistButton:hover {
+  background-color: #177e68;
+  text-decoration: none;
+}
+
+/* line 101, sass/foundation/global/_buttons.scss */
+#previous-button, .reloadButton {
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-family: "Oswald-Regular", arial, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: .75rem;
+  background-color: #006b54;
+  border: 1px solid #006b54;
+  flex-direction: row-reverse;
+  padding: 0.75em 1.25em;
+  margin-right: .5rem;
+  font-size: 1rem;
+}
+@media (min-width: 37.5em) {
+  /* line 101, sass/foundation/global/_buttons.scss */
+  #previous-button, .reloadButton {
+    width: auto;
+  }
+}
+/* line 97, sass/foundation/global/_mixins.scss */
+#previous-button:after, .reloadButton:after {
+  font-family: "icomoon";
+  content: "";
+  color: #fcc917;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+/* line 105, sass/foundation/global/_mixins.scss */
+#previous-button:focus, .reloadButton:focus {
+  outline: none;
+}
+/* line 109, sass/foundation/global/_mixins.scss */
+#previous-button:hover, .reloadButton:hover {
+  background-color: #00b890;
+  text-decoration: none;
+}
+/* line 114, sass/foundation/global/_mixins.scss */
+#previous-button:active, .reloadButton:active {
+  background-color: #001f18;
+}
+/* line 108, sass/foundation/global/_buttons.scss */
+#previous-button:after, .reloadButton:after {
+  content: "";
+  transform: rotate(180deg);
+  margin-right: 1.5rem;
+  margin-left: 0;
+  color: #fcc917;
+}
+/* line 116, sass/foundation/global/_buttons.scss */
+#previous-button:hover, .reloadButton:hover {
+  background-color: #177e68;
+  text-decoration: none;
+}
+
+/* line 122, sass/foundation/global/_buttons.scss */
+#buildButton, #welcomePage-button, .printButton {
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+  font-family: "Oswald-Regular", arial, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: .75rem;
+  background-color: #fcc917;
+  border: 1px solid #006b54;
+  padding: 0.75em 1.25em;
+  width: 100%;
+  border: 0;
+}
+@media (min-width: 37.5em) {
+  /* line 122, sass/foundation/global/_buttons.scss */
+  #buildButton, #welcomePage-button, .printButton {
+    width: auto;
+  }
+}
+/* line 97, sass/foundation/global/_mixins.scss */
+#buildButton:after, #welcomePage-button:after, .printButton:after {
+  font-family: "icomoon";
+  content: "";
+  color: #fcc917;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+/* line 105, sass/foundation/global/_mixins.scss */
+#buildButton:focus, #welcomePage-button:focus, .printButton:focus {
+  outline: none;
+}
+/* line 109, sass/foundation/global/_mixins.scss */
+#buildButton:hover, #welcomePage-button:hover, .printButton:hover {
+  background-color: #fddb63;
+  text-decoration: none;
+}
+/* line 114, sass/foundation/global/_mixins.scss */
+#buildButton:active, #welcomePage-button:active, .printButton:active {
+  background-color: #c49903;
+}
+/* line 128, sass/foundation/global/_buttons.scss */
+#buildButton:after, #welcomePage-button:after, .printButton:after {
+  content: "";
+  color: #333;
+}
+/* line 133, sass/foundation/global/_buttons.scss */
+#buildButton:hover, #welcomePage-button:hover, .printButton:hover {
+  background-color: #177e68;
+  text-decoration: none;
+}
+
+/* line 9, sass/foundation/global/_layout.scss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* line 19, sass/foundation/global/_layout.scss */
+.center {
+  width: 90%;
+  max-width: 56.25em;
+  margin: auto;
+}
+
+/* line 33, sass/foundation/global/_layout.scss */
+.guide-headline {
+  text-align: center;
+  position: absolute;
+  z-index: 10000;
+  padding: 5% 7%;
+  left: 0;
+  right: 0;
+}
+/* line 41, sass/foundation/global/_layout.scss */
+.guide-headline h1 {
+  background: white;
+  margin-left: -16%;
+  border-radius: 4rem;
+  padding: .5rem;
+  font-size: 1.25rem;
+  position: relative;
+}
+@media (min-width: 75em) {
+  /* line 49, sass/foundation/global/_layout.scss */
+  .guide-headline h1:after {
+    position: absolute;
+    content: "Here's what you've chosen so far:";
+    /* top: 0; */
+    left: 0;
+    bottom: -34px;
+    color: white;
+    font-size: 1.125rem;
+    text-transform: capitalize;
+    right: 0;
+    width: 100%;
+    height: 2rem;
+    font-family: century-gothic, sans-serif;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 41, sass/foundation/global/_layout.scss */
+  .guide-headline h1 {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 56.25em) and (min-width: 20rem) and (max-width: 75rem) {
+  /* line 41, sass/foundation/global/_layout.scss */
+  .guide-headline h1 {
+    font-size: calc( 1.4rem + (1.5 - 1.4) * ( (100vw - 20rem) / ( 75 - 20) ));
+  }
+}
+@media (min-width: 56.25em) and (min-width: 75rem) {
+  /* line 41, sass/foundation/global/_layout.scss */
+  .guide-headline h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* line 72, sass/foundation/global/_layout.scss */
+header {
+  padding: 2% 0;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 48em) {
+  /* line 72, sass/foundation/global/_layout.scss */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/* line 81, sass/foundation/global/_layout.scss */
+header h1 {
+  text-indent: -999rem;
+  width: 100%;
+  height: 3rem;
+  max-width: 5em;
+  margin: 0;
+  font-size: 3.25rem;
+  background: url("img_siena_logo.svg") no-repeat center center;
+  background-size: contain;
+  height: 4rem;
+  max-width: 4em;
+  margin: 0;
+}
+@media (min-width: 20rem) and (max-width: 75rem) {
+  /* line 81, sass/foundation/global/_layout.scss */
+  header h1 {
+    font-size: calc( 3.25rem + (4.5 - 3.25) * ( (100vw - 20rem) / ( 75 - 20) ));
+  }
+}
+@media (min-width: 75rem) {
+  /* line 81, sass/foundation/global/_layout.scss */
+  header h1 {
+    font-size: 4.5rem;
+  }
+}
+
+/* line 89, sass/foundation/global/_layout.scss */
+.mobile-header {
+  padding: 5%;
+}
+
+/* line 93, sass/foundation/global/_layout.scss */
+nav {
+  position: relative;
+  z-index: 100000;
+  margin-bottom: 3rem;
+}
+/* line 98, sass/foundation/global/_layout.scss */
+nav h1 {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  width: 0;
+}
+/* line 105, sass/foundation/global/_layout.scss */
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 37.5em) {
+  /* line 105, sass/foundation/global/_layout.scss */
+  nav ul {
+    flex-direction: row;
+  }
+}
+@media (min-width: 48em) {
+  /* line 105, sass/foundation/global/_layout.scss */
+  nav ul {
+    justify-content: center;
+  }
+}
+
+/* line 120, sass/foundation/global/_layout.scss */
+form {
+  font-weight: bold;
+}
+
+/* line 124, sass/foundation/global/_layout.scss */
+.page-wraper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+/* line 129, sass/foundation/global/_layout.scss */
+.page-wraper #left-container {
+  flex-grow: 1;
+}
+@media (min-width: 48em) {
+  /* line 124, sass/foundation/global/_layout.scss */
+  .page-wraper {
+    flex-direction: row;
+  }
+  /* line 134, sass/foundation/global/_layout.scss */
+  .page-wraper #left-container {
+    flex: 1 calc(100% - 32%);
+  }
+  /* line 137, sass/foundation/global/_layout.scss */
+  .page-wraper #right-container {
+    flex: 1 32%;
+  }
+  /* line 139, sass/foundation/global/_layout.scss */
+  .page-wraper #right-container .img-wrapper {
+    height: 100%;
+  }
+}
+/* line 145, sass/foundation/global/_layout.scss */
+.page-wraper #left-container {
+  padding: 0 5%;
+}
+/* line 148, sass/foundation/global/_layout.scss */
+.page-wraper #left-container .container-inner-wrap {
+  max-width: 80%;
+  margin: auto;
+  position: relative;
+}
+/* line 155, sass/foundation/global/_layout.scss */
+.page-wraper #right-container {
+  position: relative;
+}
+@media (max-width: 48em) {
+  /* line 155, sass/foundation/global/_layout.scss */
+  .page-wraper #right-container {
+    display: none;
+  }
+}
+@media (min-width: 48em) {
+  /* line 162, sass/foundation/global/_layout.scss */
+  .page-wraper #right-container #academicsCounter, .page-wraper #right-container #StudentLifeCounter, .page-wraper #right-container #finAssistanceCounter, .page-wraper #right-container #ResourcesCounter, .page-wraper #right-container #StudentSuccessCounter {
+    display: none;
+  }
+}
+/* line 168, sass/foundation/global/_layout.scss */
+.page-wraper #page-template {
+  position: relative;
+  padding-bottom: 12%;
+  z-index: 500;
+  margin-bottom: 0;
+  border-bottom: 1px dotted #212121;
+}
+/* line 175, sass/foundation/global/_layout.scss */
+.page-wraper #page-template #checkbox-container {
+  font-size: 1rem;
+}
+@media (min-width: 20rem) and (max-width: 75rem) {
+  /* line 175, sass/foundation/global/_layout.scss */
+  .page-wraper #page-template #checkbox-container {
+    font-size: calc( 1rem + (1.125 - 1) * ( (100vw - 20rem) / ( 75 - 20) ));
+  }
+}
+@media (min-width: 75rem) {
+  /* line 175, sass/foundation/global/_layout.scss */
+  .page-wraper #page-template #checkbox-container {
+    font-size: 1.125rem;
+  }
+}
+
+/* line 182, sass/foundation/global/_layout.scss */
+#HomeCheckbox-container, #checkbox-container {
+  padding: 3%;
+}
+/* line 184, sass/foundation/global/_layout.scss */
+#HomeCheckbox-container h4, #checkbox-container h4 {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+@media (min-width: 20rem) and (max-width: 75rem) {
+  /* line 184, sass/foundation/global/_layout.scss */
+  #HomeCheckbox-container h4, #checkbox-container h4 {
+    font-size: calc( 1.3rem + (1.5 - 1.3) * ( (100vw - 20rem) / ( 75 - 20) ));
+  }
+}
+@media (min-width: 75rem) {
+  /* line 184, sass/foundation/global/_layout.scss */
+  #HomeCheckbox-container h4, #checkbox-container h4 {
+    font-size: 1.5rem;
+  }
+}
+/* line 188, sass/foundation/global/_layout.scss */
+#HomeCheckbox-container div, #checkbox-container div {
+  display: flex;
+  align-items: baseline;
+  padding: 0 0 1rem;
+}
+/* line 193, sass/foundation/global/_layout.scss */
+#HomeCheckbox-container div input, #checkbox-container div input {
+  margin-bottom: 0;
+}
+/* line 197, sass/foundation/global/_layout.scss */
+#HomeCheckbox-container div label, #checkbox-container div label {
+  padding: 0;
+}
+
+/* line 213, sass/foundation/global/_layout.scss */
+#welcome-page nav {
+  display: none;
+}
+/* line 216, sass/foundation/global/_layout.scss */
+#welcome-page #guideContact-container, #welcome-page .step-container, #welcome-page .checklist-thanks-copy, #welcome-page #page-template {
+  display: none;
+}
+/* line 222, sass/foundation/global/_layout.scss */
+#welcome-page .guide-headline h1:after {
+  display: none;
+}
+/* line 227, sass/foundation/global/_layout.scss */
+#welcome-page #left-container {
+  margin-bottom: 3%;
+}
+
+/* line 235, sass/foundation/global/_layout.scss */
+#academics-page #guideContact-container, #academics-page #createChecklistButton, #academics-page #checklist-thanks-copy {
+  display: none;
+}
+
+/* line 242, sass/foundation/global/_layout.scss */
+#student-life-page #guideContact-container, #student-life-page #createChecklistButton, #student-life-page #checklist-thanks-copy {
+  display: none;
+}
+
+/* line 250, sass/foundation/global/_layout.scss */
+#fin-assistance-page #checkbox-container #finAssistanceQue5, #fin-assistance-page #checkbox-container #finAssistanceQue4 {
+  display: none;
+}
+/* line 254, sass/foundation/global/_layout.scss */
+#fin-assistance-page #guideContact-container, #fin-assistance-page #createChecklistButton, #fin-assistance-page #checklist-thanks-copy {
+  display: none;
+}
+
+/* line 262, sass/foundation/global/_layout.scss */
+#resources-page #checkbox-container #resourceseQue4, #resources-page #checkbox-container #resourcesQue5 {
+  display: none;
+}
+/* line 266, sass/foundation/global/_layout.scss */
+#resources-page #guideContact-container, #resources-page #createChecklistButton, #resources-page #checklist-thanks-copy {
+  display: none;
+}
+
+/* line 274, sass/foundation/global/_layout.scss */
+#student-success-page #checkbox-container #studentSuccessQue5 {
+  display: none;
+}
+/* line 279, sass/foundation/global/_layout.scss */
+#student-success-page #guideContact-container, #student-success-page #createChecklistButton {
+  display: none;
+}
+
+/* line 290, sass/foundation/global/_layout.scss */
+#checklist-page ul #academicsCounter, #checklist-page ul #finAssistanceCounter, #checklist-page ul #ResourcesCounter, #checklist-page ul #StudentSuccessCounter, #checklist-page ul #StudentLifeCounter {
+  display: none !important;
+}
+/* line 295, sass/foundation/global/_layout.scss */
+#checklist-page #createChecklistButton {
+  display: block;
+}
+/* line 298, sass/foundation/global/_layout.scss */
+#checklist-page .step-container {
+  display: none;
+}
+/* line 301, sass/foundation/global/_layout.scss */
+#checklist-page nav {
+  margin-top: auto;
+}
+/* line 304, sass/foundation/global/_layout.scss */
+#checklist-page .page-wraper {
+  height: 100%;
+  flex-direction: column-reverse;
+}
+@media (min-width: 48em) {
+  /* line 304, sass/foundation/global/_layout.scss */
+  #checklist-page .page-wraper {
+    flex-direction: row;
+  }
+}
+/* line 314, sass/foundation/global/_layout.scss */
+#checklist-page .page-wraper #page-template .checkListContainer .checklist-thanks-copy {
+  margin-top: -1rem;
+}
+/* line 320, sass/foundation/global/_layout.scss */
+#checklist-page .page-wraper .img-wrapper {
+  padding: 15%;
+}
+/* line 324, sass/foundation/global/_layout.scss */
+#checklist-page #guideContact-container {
+  display: none;
+}
+/* line 327, sass/foundation/global/_layout.scss */
+#checklist-page .guide-headline {
+  display: none;
+}
+
+/* line 334, sass/foundation/global/_layout.scss */
+#guide-page header {
+  text-align: center;
+  justify-content: center;
+}
+/* line 338, sass/foundation/global/_layout.scss */
+#guide-page .step-container, #guide-page .intro-categories {
+  display: none;
+}
+/* line 341, sass/foundation/global/_layout.scss */
+#guide-page #page-template {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 345, sass/foundation/global/_layout.scss */
+#guide-page .headerCollage {
+  display: none;
+  height: 35vh;
+  width: 100%;
+  background: url(sieana-header-image.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: 50% 0;
+}
+/* line 353, sass/foundation/global/_layout.scss */
+#guide-page .guideContainer {
+  margin: 5% auto;
+}
+@media (min-width: 48em) {
+  /* line 353, sass/foundation/global/_layout.scss */
+  #guide-page .guideContainer {
+    max-width: 65rem !important;
+  }
+}
+/* line 360, sass/foundation/global/_layout.scss */
+#guide-page .guideContainer section {
+  position: relative;
+  padding: 7rem 1vw 5vh;
+  border-bottom: 1px dashed;
+  margin-bottom: 2rem;
+}
+/* line 366, sass/foundation/global/_layout.scss */
+#guide-page .guideContainer section h2 {
+  text-transform: inherit;
+  border-bottom: 2px #fcc917 solid;
+}
+/* line 370, sass/foundation/global/_layout.scss */
+#guide-page .guideContainer section div {
+  margin: 3rem 0;
+}
+/* line 374, sass/foundation/global/_layout.scss */
+#guide-page .guideContainer section:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+}
+@media (min-width: 48em) {
+  /* line 360, sass/foundation/global/_layout.scss */
+  #guide-page .guideContainer section {
+    padding: 2vh 1vw 5vh;
+    padding-left: 23rem;
+  }
+  /* line 387, sass/foundation/global/_layout.scss */
+  #guide-page .guideContainer section:before {
+    width: 19rem;
+    height: 94%;
+  }
+  /* line 392, sass/foundation/global/_layout.scss */
+  #guide-page .guideContainer section:nth-of-type(2n+0) {
+    padding-right: 23rem;
+    padding-left: 0;
+  }
+  /* line 395, sass/foundation/global/_layout.scss */
+  #guide-page .guideContainer section:nth-of-type(2n+0):before {
+    left: inherit;
+    right: 0;
+  }
+}
+/* line 405, sass/foundation/global/_layout.scss */
+#guide-page .guideContainer section div {
+  padding-left: 5%;
+}
+/* line 409, sass/foundation/global/_layout.scss */
+#guide-page .guideContainer span {
+  margin: 10% 0 2%;
+  display: block;
+  text-align: center;
+}
+@media (min-width: 37.5em) {
+  /* line 409, sass/foundation/global/_layout.scss */
+  #guide-page .guideContainer span {
+    max-width: 32rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+/* line 423, sass/foundation/global/_layout.scss */
+#guide-page nav {
+  display: none;
+}
+
+/* line 430, sass/foundation/global/_layout.scss */
+footer #guideContact-container {
+  padding: 3% 5%;
+  background: #006b54;
+  border-top: 5px solid #FCC917;
+}
+/* line 434, sass/foundation/global/_layout.scss */
+footer #guideContact-container p {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  max-width: 60rem;
+  margin: 1rem auto;
+}
+@media (min-width: 20rem) and (max-width: 75rem) {
+  /* line 434, sass/foundation/global/_layout.scss */
+  footer #guideContact-container p {
+    font-size: calc( 1rem + (1.125 - 1) * ( (100vw - 20rem) / ( 75 - 20) ));
+  }
+}
+@media (min-width: 75rem) {
+  /* line 434, sass/foundation/global/_layout.scss */
+  footer #guideContact-container p {
+    font-size: 1.125rem;
+  }
+}
+/* line 441, sass/foundation/global/_layout.scss */
+footer #guideContact-container .contact-wrapper {
+  text-align: center;
+}
+@media (min-width: 48em) {
+  /* line 441, sass/foundation/global/_layout.scss */
+  footer #guideContact-container .contact-wrapper {
+    padding-left: 45%;
+    text-align: left;
+  }
+}
+/* line 447, sass/foundation/global/_layout.scss */
+footer #guideContact-container .contact-wrapper p {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 20rem) and (max-width: 75rem) {
+  /* line 447, sass/foundation/global/_layout.scss */
+  footer #guideContact-container .contact-wrapper p {
+    font-size: calc( 1rem + (1.125 - 1) * ( (100vw - 20rem) / ( 75 - 20) ));
+  }
+}
+@media (min-width: 75rem) {
+  /* line 447, sass/foundation/global/_layout.scss */
+  footer #guideContact-container .contact-wrapper p {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 48em) {
+  /* line 455, sass/foundation/global/_layout.scss */
+  footer #guideContact-container .contact-wrapper p:before {
+    content: " ";
+    position: absolute;
+    left: -18rem;
+    top: 0;
+    width: 14rem;
+    height: 5rem;
+    background: url("img_siena_logo-reversed.svg") no-repeat center center;
+    background-size: contain;
+  }
+}
+/* line 467, sass/foundation/global/_layout.scss */
+footer #guideContact-container .contact-wrapper a {
+  color: #fcc917;
+}
+/* line 471, sass/foundation/global/_layout.scss */
+footer #guideContact-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+/* line 477, sass/foundation/global/_layout.scss */
+footer #guideContact-container ul a {
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-family: "Oswald-Regular", arial, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: .75rem;
+  background-color: #006b54;
+  border: 1px solid #006b54;
+}
+@media (min-width: 37.5em) {
+  /* line 477, sass/foundation/global/_layout.scss */
+  footer #guideContact-container ul a {
+    width: auto;
+  }
+}
+/* line 97, sass/foundation/global/_mixins.scss */
+footer #guideContact-container ul a:after {
+  font-family: "icomoon";
+  content: "";
+  color: #fcc917;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+/* line 105, sass/foundation/global/_mixins.scss */
+footer #guideContact-container ul a:focus {
+  outline: none;
+}
+/* line 109, sass/foundation/global/_mixins.scss */
+footer #guideContact-container ul a:hover {
+  background-color: #00b890;
+  text-decoration: none;
+}
+/* line 114, sass/foundation/global/_mixins.scss */
+footer #guideContact-container ul a:active {
+  background-color: #001f18;
+}
+@media (min-width: 37.5em) {
+  /* line 471, sass/foundation/global/_layout.scss */
+  footer #guideContact-container ul {
+    flex-direction: row;
+    padding: 3% 5% 0;
+    justify-content: space-around;
+  }
+}
+
+/* line 20, sass/foundation/global/_ceeb.scss */
+.rte-custom-highschoollookup7 .result {
+  position: relative;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+/* line 26, sass/foundation/global/_ceeb.scss */
+.rte-custom-highschoollookup7 .result .location {
+  display: block;
+  font-size: 0.875em;
+  font-style: italic;
+}
+/* line 32, sass/foundation/global/_ceeb.scss */
+.rte-custom-highschoollookup7 .result a {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: transparent;
+  border: 0;
+  background: none;
+  font-size: 0;
+}
+/* line 41, sass/foundation/global/_ceeb.scss */
+.rte-custom-highschoollookup7 .result a::after {
+  content: "X";
+  color: black;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* line 52, sass/foundation/global/_ceeb.scss */
+.ac_results {
+  z-index: 1000;
+  background: #fff;
+  position: relative;
+}
+/* line 57, sass/foundation/global/_ceeb.scss */
+.ac_results ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 62, sass/foundation/global/_ceeb.scss */
+.ac_results li {
+  display: block;
+  margin: 0;
+  padding: 0.75em;
+  cursor: pointer;
+}
+/* line 68, sass/foundation/global/_ceeb.scss */
+.ac_results li:nth-child(even) {
+  background: #eee;
+}
+/* line 82, sass/foundation/global/_ceeb.scss */
+.ac_results li .location {
+  display: block;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+/* line 15, sass/foundation/global/_modals.scss */
+.fancybox-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* line 24, sass/foundation/global/_modals.scss */
+.fancybox-wrap {
+  position: absolute !important;
+  right: 0 !important;
+  left: 0 !important;
+  width: 90% !important;
+  max-width: 37.5em !important;
+  margin: 0 auto !important;
+}
+
+/* line 33, sass/foundation/global/_modals.scss */
+.fancybox-skin {
+  padding: 1.5rem !important;
+  border-radius: 0 !important;
+  background: #fff !important;
+}
+
+/* line 39, sass/foundation/global/_modals.scss */
+.fancybox-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  color: transparent;
+  border: 0;
+  background: none;
+  font-size: 0;
+}
+/* line 52, sass/foundation/global/_modals.scss */
+.fancybox-close::after {
+  content: "X";
+  color: black;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+/* line 85, sass/foundation/global/_modals.scss */
+.fancybox-inner {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* line 7, sass/style.scss */
+#welcome-page .img-wrapper {
+  background: url("halldome.jpg") no-repeat center center;
+  background-size: cover;
+}
+/* line 11, sass/style.scss */
+#welcome-page .img-wrapper #icon-container {
+  display: none;
+}
+/* line 16, sass/style.scss */
+#welcome-page .intro-categories p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+@media (min-width: 20rem) and (max-width: 75rem) {
+  /* line 16, sass/style.scss */
+  #welcome-page .intro-categories p {
+    font-size: calc( 1rem + (1.25 - 1) * ( (100vw - 20rem) / ( 75 - 20) ));
+  }
+}
+@media (min-width: 75rem) {
+  /* line 16, sass/style.scss */
+  #welcome-page .intro-categories p {
+    font-size: 1.25rem;
+  }
+}
+/* line 22, sass/style.scss */
+#welcome-page .intro-categories #HomeCheckbox-container div {
+  font-size: 1rem;
+}
+@media (min-width: 20rem) and (max-width: 75rem) {
+  /* line 22, sass/style.scss */
+  #welcome-page .intro-categories #HomeCheckbox-container div {
+    font-size: calc( 1rem + (1.25 - 1) * ( (100vw - 20rem) / ( 75 - 20) ));
+  }
+}
+@media (min-width: 75rem) {
+  /* line 22, sass/style.scss */
+  #welcome-page .intro-categories #HomeCheckbox-container div {
+    font-size: 1.25rem;
+  }
+}
+
+/* line 29, sass/style.scss */
+#academics-page .img-wrapper {
+  background: url("academics.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/* line 36, sass/style.scss */
+#student-life-page .img-wrapper {
+  background: url("studentlife.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: 72%;
+}
+
+/* line 44, sass/style.scss */
+#fin-assistance-page .img-wrapper {
+  background: url("finaid.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: 79%;
+}
+
+/* line 52, sass/style.scss */
+#resources-page .img-wrapper {
+  background: url("StudentBody.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/* line 58, sass/style.scss */
+#student-success-page .img-wrapper {
+  background: url("studentsuccess.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/* line 64, sass/style.scss */
+#checklist-page .img-wrapper {
+  background: url("checklistimg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 100%;
+}
+
+/* line 72, sass/style.scss */
+.img-wrapper {
+  display: block;
+  overflow: scroll;
+  width: 100%;
+  height: 100vh;
+  padding: 28% 5%;
+}
+/* line 79, sass/style.scss */
+.img-wrapper img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+/* line 89, sass/style.scss */
+.img-wrapper #icon-container {
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+/* line 95, sass/style.scss */
+.img-wrapper #icon-container ul h4 {
+  color: #fcc917;
+}
+/* line 98, sass/style.scss */
+.img-wrapper #icon-container ul li {
+  color: white;
+  position: relative;
+  padding-left: 1.25rem;
+}
+/* line 103, sass/style.scss */
+.img-wrapper #icon-container ul li:before {
+  position: absolute;
+  content: "";
+  font-family: "icomoon";
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 112, sass/style.scss */
+.img-wrapper #icon-container ul li:hover, .img-wrapper #icon-container ul li:focus {
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+/* line 122, sass/style.scss */
+.slide {
+  opacity: 0;
+  height: 0 !important;
+  padding: 0 !important;
+  background: #fff;
+  display: none;
+  z-index: 1;
+}
+
+/* line 131, sass/style.scss */
+.active-slide {
+  opacity: 1;
+  height: auto !important;
+  z-index: 2;
+  display: block;
+}
+
+/* line 139, sass/style.scss */
+.img-wrapper [id*="Header"] {
+  display: block;
+  position: relative;
+  z-index: 500000;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 4.25rem;
+}
+@media (min-width: 48em) {
+  /* line 139, sass/style.scss */
+  .img-wrapper [id*="Header"] {
+    padding: 0 2rem;
+  }
+}
+/* line 151, sass/style.scss */
+.img-wrapper:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background: rgba(1, 68, 54, 0.87059);
+  z-index: 1;
+  transition: opacity 2s;
+  transition-timing-function: ease-in-out;
+}
+/* line 164, sass/style.scss */
+.img-wrapper:after {
+  position: absolute;
+  content: "Your live preview below";
+  top: 12%;
+  left: 8%;
+  /* bottom: -34px; */
+  color: white;
+  font-size: 1.125rem;
+  text-transform: capitalize;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 2rem;
+  /* text-align: center; */
+  z-index: 10;
+  font-family: century-gothic, sans-serif;
+}
+@media (min-width: 48em) {
+  /* line 164, sass/style.scss */
+  .img-wrapper:after {
+    display: none;
+  }
+}
+
+/* line 189, sass/style.scss */
+#icon-container ul div {
+  display: block;
+  position: absolute;
+  left: 11px;
+  top: -8px;
+  background: #011f18;
+  width: auto;
+  height: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  padding: .5rem;
+  border-radius: 50%;
+}
+@media (min-width: 48em) {
+  /* line 189, sass/style.scss */
+  #icon-container ul div {
+    display: none;
+  }
+}
+
+/* line 211, sass/style.scss */
+#icon-container span {
+  position: relative;
+  display: flex;
+}
+/* line 214, sass/style.scss */
+#icon-container span:after {
+  content: "testing";
+  display: block;
+  width: auto;
+  height: auto;
+  font-weight: normal;
+}
+@media (min-width: 48em) {
+  /* line 214, sass/style.scss */
+  #icon-container span:after {
+    display: none;
+  }
+}
+
+/* line 228, sass/style.scss */
+#academicsCounter:after, #StudentLifeCounter:after {
+  content: "/5" !important;
+}
+
+/* line 234, sass/style.scss */
+#finAssistanceCounter:after, #ResourcesCounter:after {
+  content: "/3" !important;
+}
+
+/* line 239, sass/style.scss */
+#StudentSuccessCounter:after {
+  content: "/4" !important;
+}
+
+/* line 246, sass/style.scss */
+.optionContainer {
+  padding: 6vh 4vw;
+  height: auto;
+}
+
+/* line 250, sass/style.scss */
+.checkListContainer {
+  display: flex;
+  flex-direction: column;
+}
+/* line 254, sass/style.scss */
+.checkListContainer ul {
+  padding-left: 5%;
+}
+/* line 257, sass/style.scss */
+.checkListContainer span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  display: block !important;
+  width: 100%;
+  padding-top: 2rem;
+}
+/* line 266, sass/style.scss */
+.checkListContainer span button {
+  width: 100%;
+}
+
+/* line 271, sass/style.scss */
+.guide-container {
+  padding: 0 9vw;
+}
+
+/* line 275, sass/style.scss */
+.overlay-container:before {
+  opacity: 1;
+}
+
+/* line 279, sass/style.scss */
+.overlay-container-2 {
+  transition: opacity 2s;
+  transition-timing-function: ease-in-out;
+}
+/* line 282, sass/style.scss */
+.overlay-container-2:before {
+  transition: opacity 2s;
+  transition-timing-function: ease-in-out;
+  background: rgba(126, 28, 199, 0.6);
+  opacity: 1;
+}
+
+/* line 289, sass/style.scss */
+.quiz-container {
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}
+
+/* line 294, sass/style.scss */
+.intro-categories {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (min-width: 48em) {
+  /* line 294, sass/style.scss */
+  .intro-categories {
+    margin-top: 4%;
+  }
+}
+
+/* line 309, sass/style.scss */
+.checkListContainer ul {
+  width: auto;
+  height: auto;
+  list-style-type: disc;
+}
+/* line 314, sass/style.scss */
+.checkListContainer ul li {
+  margin-left: 2rem;
+  display: list-item;
+  color: #728898;
+}
+/* line 318, sass/style.scss */
+.checkListContainer ul li span {
+  padding: 0;
+}
+@media (min-width: 64em) {
+  /* line 309, sass/style.scss */
+  .checkListContainer ul {
+    width: 43.33%;
+    min-width: 10rem;
+    padding-left: 5rem;
+  }
+}
+/* line 330, sass/style.scss */
+.checkListContainer h4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+/* line 335, sass/style.scss */
+.checkListContainer h4:before {
+  content: " ";
+  position: relative;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 2rem;
+  margin-right: 4%;
+  background: url("checkmark-outline.svg") no-repeat center center;
+  background-size: contain;
+}
+@media (min-width: 64em) {
+  /* line 307, sass/style.scss */
+  .checkListContainer {
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+}
+
+/* line 364, sass/style.scss */
+.checklist-thanks-copy {
+  position: relative;
+  font-weight: bold;
+  background: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  z-index: 10000;
+}
+@media (min-width: 20rem) and (max-width: 75rem) {
+  /* line 364, sass/style.scss */
+  .checklist-thanks-copy {
+    font-size: calc( 1.5rem + (1.75 - 1.5) * ( (100vw - 20rem) / ( 75 - 20) ));
+  }
+}
+@media (min-width: 75rem) {
+  /* line 364, sass/style.scss */
+  .checklist-thanks-copy {
+    font-size: 1.75rem;
+  }
+}
+
+/* line 373, sass/style.scss */
+#guide-page {
+  position: relative;
+}
+/* line 376, sass/style.scss */
+#guide-page:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 16rem;
+  background: url("ultrawide-xlrg-siena-sign-2-2.jpg") no-repeat center center;
+  background-size: cover;
+}
+@media (min-width: 48em) {
+  /* line 376, sass/style.scss */
+  #guide-page:before {
+    height: 25rem;
+  }
+}
+/* line 391, sass/style.scss */
+#guide-page header {
+  text-align: center;
+  justify-content: center;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 50000;
+}
+/* line 401, sass/style.scss */
+#guide-page #left-container {
+  width: 100%;
+  padding: 0;
+}
+/* line 404, sass/style.scss */
+#guide-page #left-container #page-template .guideContainer {
+  max-width: 44rem;
+  padding: 5%;
+  margin: 5% auto;
+}
+/* line 409, sass/style.scss */
+#guide-page #left-container .guideIntroContainer {
+  padding: 5% 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+@media (min-width: 20rem) and (max-width: 75rem) {
+  /* line 409, sass/style.scss */
+  #guide-page #left-container .guideIntroContainer {
+    font-size: calc( 1.5rem + (2 - 1.5) * ( (100vw - 20rem) / ( 75 - 20) ));
+  }
+}
+@media (min-width: 75rem) {
+  /* line 409, sass/style.scss */
+  #guide-page #left-container .guideIntroContainer {
+    font-size: 2rem;
+  }
+}
+/* line 413, sass/style.scss */
+#guide-page #left-container .guideIntroContainer p {
+  background: white;
+  padding: 1rem;
+}
+@media (min-width: 37.5em) {
+  /* line 413, sass/style.scss */
+  #guide-page #left-container .guideIntroContainer p {
+    padding: 5%;
+  }
+}
+@media (min-width: 48em) {
+  /* line 409, sass/style.scss */
+  #guide-page #left-container .guideIntroContainer {
+    padding: 12rem 0 0;
+  }
+}
+/* line 424, sass/style.scss */
+#guide-page #left-container #page-template {
+  padding: 0 5%;
+}
+/* line 428, sass/style.scss */
+#guide-page #right-container {
+  display: none;
+}
+
+/* line 433, sass/style.scss */
+ul {
+  list-style: none;
+}
+
+/* line 437, sass/style.scss */
+.question {
+  display: flex;
+  align-items: center;
+}
+/* line 441, sass/style.scss */
+.question input[type=checkbox] {
+  margin: 0 .5em 0 0;
+}
+/* line 444, sass/style.scss */
+.question input[type=checkbox] ~ label {
+  padding-left: 0;
+}
+
+/* line 453, sass/style.scss */
+.academicsSection:before {
+  background: url("academinics-section.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: 50% 0;
+}
+
+/* line 460, sass/style.scss */
+.studentLifeSection:before {
+  background: url("studentlife-section.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: 50% -60px;
+}
+
+/* line 467, sass/style.scss */
+.finAssistanceSection:before {
+  background: url("financial-section.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: 50% 59%;
+}
+
+/* line 474, sass/style.scss */
+.resourcesSection:before {
+  background: url("resources-section.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: 50% 15%;
+}
+
+/* line 481, sass/style.scss */
+.studentSuccessSection:before {
+  background: url("studentsuccess-section.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: 50% 12%;
+}
+
+@media print {
+  /* All your print styles go here */
+  /* line 492, sass/style.scss */
+  header {
+    display: none;
+    padding: 0 !important;
+  }
+
+  /* line 496, sass/style.scss */
+  .page-wraper {
+    min-height: 100% !important;
+    display: block !important;
+  }
+
+  /* line 501, sass/style.scss */
+  #left-container header {
+    display: block !important;
+    position: relative;
+  }
+  /* line 506, sass/style.scss */
+  #left-container header:before {
+    display: block;
+    position: relative;
+    z-index: 50000;
+    content: url("img_siena_logo.svg");
+    top: 1rem;
+    width: 16rem;
+    height: 4rem;
+    margin: auto;
+  }
+  /* line 517, sass/style.scss */
+  #left-container .intro-categories {
+    display: none;
+    margin: 0 !important;
+  }
+
+  /* line 522, sass/style.scss */
+  #page-template {
+    border: none;
+    padding: 0 !important;
+  }
+  /* line 525, sass/style.scss */
+  #page-template .guideIntroContainer {
+    padding: 0 !important;
+  }
+  /* line 527, sass/style.scss */
+  #page-template .guideIntroContainer p {
+    padding: 2rem !important;
+  }
+  /* line 531, sass/style.scss */
+  #page-template .guideContainer {
+    margin: 0 auto !important;
+    padding: 2rem !important;
+  }
+  /* line 539, sass/style.scss */
+  #page-template .headerCollage {
+    display: none;
+  }
+  /* line 542, sass/style.scss */
+  #page-template .reloadButton, #page-template .printButton {
+    display: none;
+  }
+}

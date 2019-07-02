@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 10]><html class="no-js lt-ie10"><![endif]-->
+<!--[if gte IE 10]><!--><html class="no-js"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/sgz2orc.css">
+
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body id="welcome-page">
+  <div class="body-wrapper">
+    <header class="desktop-hide mobile-header">
+      <h1>School Logo</h1>
+      <div class="step-container">Step: <span id="currentPage-mobile"></span>/<span id="totalPages-mobile"></span></div>
+    </header>
+    <section class="page-wraper">
+      <section id="left-container">
+      <header class="mobile-hide">
+        <h1>School Logo</h1>
+        <div class="step-container">Step: <span id="currentPage"></span>/<span id="totalPages"></span></div>
+      </header>
+        <section class="intro-categories slide active-slide" id="0">
+          <h3>Welcome!</h3>
+          <p>Please select the categories you’re interested in learning more about. Once you’ve made your selections, you’ll be able to add more topics within each category. You can come back to this page at any time!</p>
+            <form action="" id="HomeCheckbox-container">
+              <div><input type="checkbox" id="category1" name="Academics" value=""><label for="category1">Academics</label><br></div>
+
+              <div><input type="checkbox" id="category2" name="Student Life" value=""><label for="category2">Student Life</label><br></div>
+
+              <div><input type="checkbox" id="category3" name="Financial Assistance" value="">
+              <label for="category3">Financial Assistance</label><br></div>
+
+              <div><input type="checkbox" id="category4" name="Resources" value="">
+              <label for="category4">Resources</label><br></div>
+
+              <div><input type="checkbox" id="category5" name="Student Success" value="">
+              <label for="category5">Student Success</label><br></div>
+
+            </form> 
+            <button type="submit" id="welcomePage-button" class="" onclick="checkInputs()" value="Submit">Let's Go!</button> 
+          </section> <!-- end intro-categories --->
+
+        <div id="page-template"></div> <!-- end page-template --->
+        <nav aria-label="Main">
+        <h1>Navigation</h1>
+          <ul>
+            <li><button id="previous-button">Previous Question</button></li>
+            <li><button id="next-button">Next Question</button></li>
+            <li><button id="createChecklistButton" onclick="buildCheckList()">Preview Guide</button></li>
+            <li><button id="buildButton" type="submit" onclick="buildGuide()">Build Guide</button></li>
+          </ul>
+        </nav>
+      </section> <!-- End Left - Continer --> 
+
+      <section id="right-container">
+        <span class="guide-headline"><h1 class="mobile-hide">Your Personalized Guide</h1></span>
+          <div role="img" id="img-wrapper" class="img-wrapper" aria-label="image-related-to-campus">
+             <!--  <img src="https://source.unsplash.com/random" alt="University Campus Image"> -->
+              <span id="icon-container"></span>
+              <span id="checklist-thanks-copy"></span>
+          </div>
+      </section>  <!-- End Left - Continer -->
+
+  </section> <!-- End page-wrapper --->
+
+ </div> <!-- End body-wrapper --->
+  <footer>
+    <section id="guideContact-container">
+      <p>We’re thrilled about your interest in Siena! If you have any questions or want to know more, please feel free to reach out to us or explore the links below.</p>
+        <div class="contact-wrapper">
+          <p>Contact Us:</p>
+          <address>
+            <a href="mailto:jim@rock.com">admissions@siena.edu</a><br>
+            <a href="tel:+13115552368">518-783-2423</a>
+          </address>
+        </div>
+        <ul>
+          <li><a href="mailto:jim@rock.com">Siena Homepage</a></li>
+          <li><a href="mailto:jim@rock.com">Prospective Students</a></li>
+          <li><a href="mailto:jim@rock.com">Schedule a Visit</a></li>
+        </ul>
+    </section> <!-- Guide Contact - Continer --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>    
+  </footer>
+
+</body>
+</html>

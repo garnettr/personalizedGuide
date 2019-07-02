@@ -1,0 +1,157 @@
+// ================
+// Custom Mixins
+// ================
+
+
+// ~ Put your custom mixins here ~
+
+
+
+$school-logo: url('img_siena_logo.svg') no-repeat center center;
+$school-logo-dark: url('') no-repeat center center;
+
+
+@mixin logo($logo_placehodler) {
+    text-indent: -999rem;
+    width: 100%;
+    height: 3rem;
+    max-width: 5em;
+    margin: 0;
+    @include fluidTypeSize( 4.5, 3.25);
+    background: $logo_placehodler;
+    background-size: contain;
+}
+
+
+//============================================================================================
+
+@mixin keyFrames($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin animation($name, $duration: 0, $easing: ease, $delay: 0, $count: 1, $direction: normal) {
+  animation: $name $duration $easing $delay $count $direction;
+  -webkit-animation: $name $duration $easing $delay $count $direction;
+}
+
+@mixin transition {
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+@mixin inputfocus {
+  -webkit-box-shadow: 0 0 5px 2px #000000;
+  box-shadow: 0 0 5px 2px #000000;
+}
+
+@mixin nofocus {
+  outline: none;
+  border: 0 !important;
+  -webkit-box-shadow: 0 !important;
+  box-shadow: none !important;
+}
+
+@mixin sectionshadow {
+  -webkit-box-shadow: 0 0 15px 0 $c-grey;
+  box-shadow: 0 0 15px 0 $c-grey;
+}
+
+@mixin button($button-color, $button-bg, $button-border) {
+  @include transition;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $mq-small) {
+    width: auto;
+    // display: inline-flex;
+  }
+
+  //text
+  color: $button-color;
+  font-family: $f-sans;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  //size 
+  font-size: 1.3rem;
+  padding: .75rem;
+
+  //background & border
+  background-color: $button-bg;
+  border: 1px solid $button-border;
+
+  &:after {
+    font-family: $f-icon;
+    content: $i-caret-right;
+    color: $c-sienagold;
+    font-size: 1.7rem;
+    margin-left: 1.5rem;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: lighten($button-bg, 15%);
+    text-decoration: none;
+  }
+
+  &:active {
+    background-color: darken($button-bg, 15%);
+  }
+}
+
+@mixin edit_button($button-color, $button-bg, $button-border) {
+  @include transition;
+  display: inline-block;
+  width: 100%;
+
+  @media (min-width: $mq-small) {
+    width: auto;
+  }
+
+  //text
+  color: $button-color;
+  font-family: $f-default-sans;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  //size 
+  font-size: .8rem;
+  padding: 0.5em .7em;
+
+  //background & border
+  background-color: $button-bg;
+  border: 1px solid $button-border;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: lighten($button-bg, 15%);
+    text-decoration: none;
+  }
+
+  &:active {
+    background-color: darken($button-bg, 15%);
+  }
+}
